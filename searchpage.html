@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <link rel="stylesheet" href="./assets/pages.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>Search Launches</title>
+</head>
+<body>
+    <header>
+        <div class="logo-image">
+            <img src="./assets/images/logo.jpg" class="img-fluid">
+        </div>
+        <a  href="./landingpage.html" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">home</i></a>
+        
+    </header>  
+    <!-- search section -->
+    <section class="search-container">
+            <form id="launch-search-form" class="search-form">
+                <label for="launch-search-input" class="launch-search-label" id="launch-search">Search For a Launch:</label>
+                <input class="launch-search-input" type="text" id="search-input" name="search">
+                <button style="font-size:36px;color: #e43f5a" type="submit" id="launch-search-btn"><i class="fa fa-rocket"></i></button>
+            </form>
+        <!-- search history -->
+        <div>
+            <ul class="search-hostory" id="launch-history"></ul>
+        </div>
+    </section> 
+    <!-- search results section-->
+    <section class="results-container">
+
+    </section>
+</body>
+</html>
