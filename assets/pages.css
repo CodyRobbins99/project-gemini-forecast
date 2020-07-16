@@ -1,0 +1,38 @@
+/* Stylesheet for other pages*/
+
+
+body {
+    background-image: url("../images/hls_starship-2000x1200.jpg");
+}
+
+ header {
+    /* padding: 20px 50px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    background-image: url("../images/hls_starship-2000x1200.jpg");
+    
+  }
+  
+  
+  /* nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #00909e;
+    padding: 40px 50px;
+  } */
+
+
+.logo-image img {
+    text-align: left;
+    height: 130px;
+    width: 150px;
+}
+
+
