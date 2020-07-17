@@ -2,7 +2,7 @@
 
 
 body {
-    background-image: url("../images/hls_starship-2000x1200.jpg");
+    background-image: url(./images/hls_starship-2000x1200.jpg);
 }
 
  header {
@@ -12,10 +12,11 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    background-color: white;
-    position: sticky;
+    background-color: #162447;
+    /* position: sticky; */
     top: 0;
-    background-image: url("../images/hls_starship-2000x1200.jpg");
+    /* background-image: url(./images/hls_starship-2000x1200.jpg); */
+    
     
   }
   
@@ -35,4 +36,7 @@ body {
     width: 150px;
 }
 
+.launches {
+  color: white;
+}
 
