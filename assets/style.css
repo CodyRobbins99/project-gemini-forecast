@@ -5,47 +5,17 @@
 
 body {
     background-image: url(./images/43895099105_0eaf6ef695_k.jpg);
-    
-}
-section {
-    padding: 400px;
-}
-
-.landing-page {
-    display: flex;
-    justify-content: center;
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
 }
 
-
-/* .landing-page-buttons {
-    text-align: center;
-    background-color: #27496d76;
-    color: white;
-    padding: 20px;
-    border-radius: 15px;
-
-}
-
-.waves-red {
-    background-color: white;
-    color: black;
-} */
 
  @import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap'); 
 
-/* body, html {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  background: #5CA4EA;
-  overflow: hidden;
-  font-family: 'Lato', sans-serif;
-} */
+
 
 .container {
-  width: 400px;
-  height: 400px;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -62,17 +32,21 @@ section {
 }
 
 .btn {
-  width: 180px;
+  width: 200px;
   height: 60px;
   cursor: pointer;
   background: transparent;
   border: 1px solid #91C9FF; 
   outline: none;
   transition: 1s ease-in-out;
+  margin: 5px 10px;
+  position: relative;
+  
 }
 
 svg {
   position: absolute;
+  width: 100%;
   left: 0;
   top: 0;
   fill: none;
@@ -96,4 +70,6 @@ svg {
   font-size: 18px;
   font-weight: 100;
 }
+
+
 
