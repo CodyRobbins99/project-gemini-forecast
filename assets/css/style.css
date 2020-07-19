@@ -76,5 +76,13 @@ svg {
   color: white;
 }
 
+.modal-footer {
+  background-color: #023e7d;
+  color: white;
+}
+
+.distance {
+  margin: 10px 0;
+}
 
 
