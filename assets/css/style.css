@@ -4,7 +4,7 @@
 
 
 body {
-    background-image: url(./images/43895099105_0eaf6ef695_k.jpg);
+    background-image: url(../images/43895099105_0eaf6ef695_k.jpg);
     background-size: cover;
     background-position: 80%;
     background-attachment: fixed;
@@ -69,6 +69,11 @@ svg {
   color: white;
   font-size: 18px;
   font-weight: 100;
+}
+
+.modal {
+  background-color: #001845;
+  color: white;
 }
 
 
