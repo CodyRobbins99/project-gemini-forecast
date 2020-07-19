@@ -38,18 +38,22 @@ header {
   margin-right: auto;
   margin-top: 5px;
   margin-bottom: 5px;
-  text-align: center;
+  text-align: left;
   padding: 5px;
   border-radius: 10px;
   justify-content: center;
   align-items: center;
   font-family: 'Orbitron', sans-serif;
 }
-.future-launches h5,
-.future-launches h6 {
-  font-weight: bold;
+.mission-title,
+.launch-info {
   padding-top: 5px;
   padding-bottom: 5px;
+}
+.span-input {
+  font-weight: normal;
+  color: #1f4068;
+  font-size: 1.5vw;
 }
 
 /* Footer Styling */
@@ -85,14 +89,33 @@ header {
     font-size: 1vw;
   }
 }
+@media screen and (max-width: 700px){
+  .span-input {
+    font-size: 1.85vw;
+  }
+}
 @media screen and (max-width: 500px) {
-  .future-launches h5 {
+  .mission-title {
     font-size: 4vw;
   }
-  .future-launches h6 {
+  .launch-info {
     font-size: 3vw;
   }
   .page-footer h5 {
     font-size: 1.5vw;
+  }
+  .span-input{
+    font-size: 2vw;
+  }
+}
+@media screen and (max-width: 400px) {
+  .launch-info {
+    font-size: 2.5vw;
+  }
+  .page-footer h5 {
+    font-size: 1.4vw;
+  }
+  .span-input {
+    font-size: 2.15vw;
   }
 }
