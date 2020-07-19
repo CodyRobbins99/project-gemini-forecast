@@ -21,7 +21,7 @@ const getLaunchInfo = function(){
             // create an h5 element
             const missionFlightDisplay = document.createElement(`h5`)
             // set text context
-            missionFlightDisplay.innerHTML = `Mission Name : <span class='span-input'>${missionName}</span> // <br /> SpaceX Flight Number: <span class='span-input'>${flightNumber}</span>`
+            missionFlightDisplay.innerHTML = `Mission Name : <span class='span-input'>${missionName}</span> // <br /> SpaceX Flight Number : <span class='span-input'>${flightNumber}</span>`
             // set class 
             missionFlightDisplay.classList = `mission-title`
             // append to container
@@ -36,11 +36,24 @@ const getLaunchInfo = function(){
             // create an h6 element
             const missionDateDisplay = document.createElement(`h6`)
             // set text context
-            missionDateDisplay.innerHTML = `Launch Date: <span class='span-input'>${humanDateFormat}</span>`
+            missionDateDisplay.innerHTML = `Launch Date : <span class='span-input'>${humanDateFormat}</span>`
             // set class
             missionDateDisplay.classList = `launch-info`
             //append to container
             launchDiv.appendChild(missionDateDisplay);
+
+            // set launch location value
+            const launchLocation = futureLaunchResponse[i].launch_site.site_name_long
+            if (launchLocation != null) {
+                //create an h6 element
+                const launchLocationDisplay = document.createElement(`h6`)
+                //set inner HTML 
+                launchLocationDisplay.innerHTML = `Launch Location : <span class='span-input'>${launchLocation}</span>`
+                //set class
+                launchLocationDisplay.classList = `launch-info`
+                //append to container
+                launchDiv.appendChild(launchLocationDisplay);
+            }
 
             // set rocket serial number and number of flight values
             const serialNumber = futureLaunchResponse[i].rocket.first_stage.cores[0].core_serial
@@ -49,7 +62,7 @@ const getLaunchInfo = function(){
                 //create an h6 element
                 const serialFlightDisplay = document.createElement(`h6`)
                 // set text context
-                serialFlightDisplay.innerHTML = `Rocket Serial Number <span class='span-input'>${serialNumber}</span> // Flight #<span class='span-input'>${rocketFlightNumber}</span>`
+                serialFlightDisplay.innerHTML = `Rocket Serial Number : <span class='span-input'>${serialNumber}</span> // Rocket Flight # : <span class='span-input'>${rocketFlightNumber}</span>`
                 //set class
                 serialFlightDisplay.classList = `launch-info`
                 //append to container
