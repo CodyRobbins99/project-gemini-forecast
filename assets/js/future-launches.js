@@ -137,11 +137,8 @@ const getForecastInfo = function() {
                 const currentForecastTime = document.createElement(`h6`)
                 //set inner HTML
                 currentForecastTime.innerHTML = `Current Time : <span class='forecast-span-input'>${humanDateFormat}</span> // <br /> Time Zone : <span class='forecast-span-input'>EST</span>`
-<<<<<<< HEAD
-=======
                 //set class
                 currentForecastTime.classList = 'launch-info'
->>>>>>> 113268bad69e3e0b6a9f41dc3f3c2eb8ef5ecc4b
                 // append to container
                 forecastDiv.appendChild(currentForecastTime)
 
@@ -238,11 +235,8 @@ const getForecastInfo = function() {
                 const currentForecastTime = document.createElement(`h6`)
                 //set inner HTML
                 currentForecastTime.innerHTML = `Current Time : <span class='forecast-span-input'>${humanDateFormat}</span> // <br /> Time Zone : <span class='span-input'>EST</span>`
-<<<<<<< HEAD
-=======
                 //set class
                 currentForecastTime.classList = 'launch-info'
->>>>>>> 113268bad69e3e0b6a9f41dc3f3c2eb8ef5ecc4b
                 // append to container
                 forecastDiv.appendChild(currentForecastTime)
 
@@ -339,11 +333,8 @@ const getForecastInfo = function() {
                 const currentForecastTime = document.createElement(`h6`)
                 //set inner HTML
                 currentForecastTime.innerHTML = `Current Time : <span class='forecast-span-input'>${humanDateFormat}</span> // <br /> Time Zone : <span class='forecast-span-input'>PST</span>`
-<<<<<<< HEAD
-=======
                 //set class
                 currentForecastTime.classList = 'launch-info'
->>>>>>> 113268bad69e3e0b6a9f41dc3f3c2eb8ef5ecc4b
                 // append to container
                 forecastDiv.appendChild(currentForecastTime)
 
