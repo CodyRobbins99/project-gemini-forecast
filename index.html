@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css"/>
     
 
@@ -18,16 +19,6 @@
                     <img class="logo responsive-img" src="./assets/images/New Logo.png"/>
                 </div>
                 <div class="buttons center-align">
-                    <!-- search page button -->
-                    <a href="./future-launches.html">
-                        <button class="btn btn-1">
-                            <svg width = "200px" height="60px" viewBox="0 0 200 60" class="border">
-                                <polyline  points="200,-1 200,60 -1,60 0,-1 200,-1" class="bg-line" />
-                                <polyline points="200,-1 200,60 0,60 0,-1 200,-1" class="hl-line" />
-                            </svg>
-                            <span>Search Launches</span>    
-                        </button>
-                    </a>
                     <!-- past launches button -->
                     <a href="./historypage.html">
                         <button class="btn btn-2">
@@ -36,6 +27,16 @@
                                 <polyline points="200,-1 200,60 0,60 0,-1 200,-1" class="hl-line" />
                             </svg>
                             <span>Past Launches</span>
+                        </button>
+                    </a>
+                    <!-- search page button -->
+                    <a href="./future-launches.html">
+                        <button class="btn btn-1">
+                            <svg width = "200px" height="60px" viewBox="0 0 200 60" class="border">
+                                <polyline  points="200,-1 200,60 -1,60 0,-1 200,-1" class="bg-line" />
+                                <polyline points="200,-1 200,60 0,60 0,-1 200,-1" class="hl-line" />
+                            </svg>
+                            <span class="future-launch">Future Launch Forecast</span>    
                         </button>
                     </a>
                     <!-- track starman button-->
@@ -60,7 +61,7 @@
         <div class="modal-content" id="modal-content">
             <h2>Starman Location</h2>
         </div>
-        <div class="modal-footer grey" id="modal-footer">
+        <div class="modal-footer red" id="modal-footer">
             <a href="#!" class="modal-close btn-flat">CLOSE</a>
         </div>
     </div>
