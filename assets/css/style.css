@@ -8,6 +8,9 @@ body {
     background-size: cover;
     background-position: 80%;
     background-attachment: fixed;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: normal;
+    
 }
 
 
@@ -71,13 +74,20 @@ svg {
   font-weight: 100;
 }
 
+.btn .future-launch {
+  font-size: 12.5px;
+}
+
 .modal {
   background-color: #001845;
   color: white;
 }
 
+.modal img {
+  border: 2px solid white;
+}
+
 .modal-footer {
-  background-color: #023e7d;
   color: white;
 }
 
@@ -85,4 +95,8 @@ svg {
   margin: 10px 0;
 }
 
-
+@media only screen and (max-width: 400px) {
+  .btn {
+    background-color: #f44336;
+  }
+}
