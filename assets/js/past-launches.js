@@ -16,10 +16,10 @@ function datePicker() {
     
         for (var i=0; i < 25; i++) {
             var launchDiv = document.createElement('div')
-            // set classes
+            
             launchDiv.classList = 'launch-div col s12 red lighten-1 white-text z-depth-3'
 
-            // set mission name and flight number values
+            
             var launchName = response[i].mission_name
             var flightNumber = response[i].flight_number
             var launchDate = response[i].launch_date_local
@@ -27,29 +27,23 @@ function datePicker() {
             var launchDetails = response[i].details
             var missionPatch = response[i].links.mission_patch
 
-            //create an image element
             var patchImg = document.createElement('img')
             patchImg.innerHTML = '';
             patchImg.classList = 'mission-patch'
             patchImg.setAttribute('src', missionPatch);
             launchDiv.appendChild(patchImg);
 
-            // create an h5 element
+            
             var missionInfo = document.createElement('h5')
-            // set text context
             missionInfo.innerHTML = "Mission Name : <span class='span-input'>" 
             + launchName + "</span><br /> SpaceX Flight Number: <span class='span-input'>" 
             + flightNumber + "</span><br /> Launch Date: <span class='span-input'>" 
             + launchDate + "</span> <br /> Payload Type: <span class='span-input'>" 
             + payloadType + "</span><br /> Launch Details: <span class='span-input'>"
             + launchDetails + "</span>"
-            // set class 
-            missionInfo.classList = 'mission-title'
-            // append to container
+             missionInfo.classList = 'mission-title'
+          
             launchDiv.appendChild(missionInfo); 
-
-
-
 
             launchHistoryContainer.appendChild(launchDiv)
         }
@@ -58,10 +52,6 @@ function datePicker() {
     
 }
 
-// var resetPage = function(
-//     document.getElementById("resetBtn")
-//     reset()
-// )
-function pageReset() {
-    document.getElementsByClassName("launch-div").reset();
-}
+// function pageReset() {
+//     document.getElementsByClassName("launch-div").reset();
+// }
