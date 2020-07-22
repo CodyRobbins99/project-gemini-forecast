@@ -1,5 +1,6 @@
 body{
     font-family: 'Orbitron', sans-serif;
+    background-color: #4c5c68;
    
 }
 
@@ -29,5 +30,10 @@ color: #1f4068;
 }
 
 .mission-title {
-  padding: 5px;
+ padding-top: 5px;
+ padding-bottom: 5px;
+}
+
+.launch-div {
+  border-radius: 30px;
 }

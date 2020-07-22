@@ -4,7 +4,6 @@ var launchHistoryContainer = document.querySelector('.past-launches');
 function datePicker() {
     var searchYear = document.querySelector("#yearpicker").value;
     var searchMonth = document.querySelector("#monthpicker").value;
-    
 
     fetch('https://api.spacexdata.com/v3/launches/past?launch_year=' + searchYear)
     .then(function(response) {
@@ -13,12 +12,14 @@ function datePicker() {
 
     .then(function(response) {
        
-    
-        response = response.filter(function(launch){
-            const launchDate = launch.launch_date_utc
-            var d = new Date(`${launchDate}`)
-            return d.getMonth() + 1 === parseInt(searchMonth);
-        })
+    //  console.log(searchYear);
+    //  console.log(response);
+
+    response = response.filter(function(launch){
+        const launchDate = launch.launch_date_utc
+        var d = new Date(`${launchDate}`)
+        return d.getMonth() + 1 === parseInt(searchMonth);
+    })
     
         for (var i=0; i < response.length; i++) {
             var launchDiv = document.createElement('div')
@@ -35,7 +36,7 @@ function datePicker() {
 
             var patchImg = document.createElement('img')
             patchImg.innerHTML = '';
-            patchImg.classList = 'mission-patch'
+            patchImg.classList = 'mission-patch section'
             patchImg.setAttribute('src', missionPatch);
             launchDiv.appendChild(patchImg);
 
