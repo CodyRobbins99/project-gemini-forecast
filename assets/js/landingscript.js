@@ -33,7 +33,7 @@ const displayImage = function(data) {
     let randomImage = data.flickr_images[Math.floor(Math.random() * data.flickr_images.length)];
     console.log(randomImage);
     let starManImg = document.createElement("img");
-    starManImg.className = "responsive-img";
+    starManImg.className = "responsive-img starman-img";
     starManImg.setAttribute("src", randomImage);
     roadsterEl.appendChild(starManImg);
 }
@@ -49,7 +49,7 @@ const displayLocation = function(data) {
     let earthDistEl = document.createElement("div");
     let earthMeasurements = document.createElement("div")
     earthDistEl.className = "earth-distance distance";
-    earthDistEl.innerHTML = "<h3>Distance From Earth:</h3>";
+    earthDistEl.innerHTML = "<h3>Distance From Earth</h3><img class='planet-img' src='./assets/images/Icons/icons8-earth-planet-50.png'/>";
     roadsterEl.appendChild(earthDistEl);
 
     earthMeasurements.innerText = earthDistanceMiles.toLocaleString(undefined, {minimumFractionDigits: 2}) + " miles/ " + earthDistanceKilos.toLocaleString(undefined, {minimumFractionDigits: 2}) + " kilometers";
@@ -57,7 +57,7 @@ const displayLocation = function(data) {
     
     let marsDistEl = document.createElement("div");
     let marsMeasurements = document.createElement("div")
-    marsDistEl.innerHTML = "<h3>Distance From Mars:</h3>";
+    marsDistEl.innerHTML = "<img class='planet-img' src='./assets/images/Icons/icons8-mars-planet-50.png'/><h3>Distance From Mars</h3>";
     marsDistEl.className = "mars-distance distance";
     marsMeasurements.innerText = marsDistanceMiles.toLocaleString(undefined, {minimumFractionDigits: 2}) + " miles/" + marsDistanceKilos.toLocaleString(undefined, {minimumFractionDigits: 2}) + "kilometers";
     marsDistEl.appendChild(marsMeasurements);
