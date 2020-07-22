@@ -234,7 +234,7 @@ const getForecastInfo = function() {
                 // create an h6 element for the time 
                 const currentForecastTime = document.createElement(`h6`)
                 //set inner HTML
-                currentForecastTime.innerHTML = `Current Time : <span class='forecast-span-input'>${humanDateFormat}</span> // <br /> Time Zone : <span class='span-input'>EST</span>`
+                currentForecastTime.innerHTML = `Current Time : <span class='forecast-span-input'>${humanDateFormat}</span> // <br /> Time Zone : <span class='forecast-span-input'>EST</span>`
                 //set class
                 currentForecastTime.classList = 'launch-info'
                 // append to container
@@ -245,7 +245,7 @@ const getForecastInfo = function() {
                 // create an h6 element for the current weather 
                 const currentWeatherElement = document.createElement('h6')
                 //set text context
-                currentWeatherElement.innerHTML = `Weather : <span class='forecst-span-input'>${currentWeather}</span>`
+                currentWeatherElement.innerHTML = `Weather : <span class='forecast-span-input'>${currentWeather}</span>`
                 // set classes
                 currentWeatherElement.classList = `launch-info`
                 // append to container 
@@ -257,7 +257,7 @@ const getForecastInfo = function() {
                 // create an h6 element for the current temp
                 const tempElement = document.createElement(`h6`)
                 // set inner HTML
-                tempElement.innerHTML = `Temperature : <span class='forecast-span-input'>${currentTemp}°F</span> // Feels Like : <span class='span-input'>${currentFeelsLike}°F</span>`
+                tempElement.innerHTML = `Temperature : <span class='forecast-span-input'>${currentTemp}°F</span> // Feels Like : <span class='forecast-span-input'>${currentFeelsLike}°F</span>`
                 //set class
                 tempElement.classList = `launch-info`
                 // append to container
