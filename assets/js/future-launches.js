@@ -7,6 +7,22 @@ const getLaunchInfo = function(){
         if (futureLaunchResponse.ok) {
             return futureLaunchResponse.json();
         }
+        else {
+            // create a Div to Store Launch Info
+            const launchDiv = document.createElement(`div`)
+            // set classes
+            launchDiv.classList = `launch-div col s12 red lighten-1 white-text border-bottom`
+            
+            // create a p element
+            const errorMessage = document.createElement(`h5`)
+            // set inner HTML
+            errorMessage.innerHTML = `It looks like we're having troubles connecting to our API. Please refresh the page to try again!`
+            // set class 
+            errorMessage.classList = `mission-title center-text`
+            // append to container 
+            launchDiv.appendChild(errorMessage)
+            futureLaunchContainer.appendChild(launchDiv)
+        }
     })
     .then(function(futureLaunchResponse) {
         for (var i = 0; i < 5; i++) {
@@ -111,6 +127,22 @@ const getForecastInfo = function() {
         if (nextLaunchResponse.ok) {
             return nextLaunchResponse.json();
         }
+        else {
+            // create a Div to Store Launch Info
+            const forecastDiv = document.createElement(`div`)
+            // set classes
+            forecastDiv.classList = `forecast-div col s12 light-blue darken-4 white-text`
+            
+            // create a p element
+            const errorMessage = document.createElement(`h5`)
+            // set inner HTML
+            errorMessage.innerHTML = `It looks like we're having troubles connecting to our API. Please refresh the page to try again!`
+            // set class 
+            errorMessage.classList = `mission-title center-text`
+            // append to container 
+            forecastDiv.appendChild(errorMessage)
+            upcomingForecastContainer.appendChild(forecastDiv)
+        }
     })
     .then(function(nextLaunchResponse) {
         
@@ -120,6 +152,22 @@ const getForecastInfo = function() {
             .then(function(currentForecastResponse) {
                 if (currentForecastResponse.ok) {
                     return currentForecastResponse.json();
+                }
+                else {
+                    // create a Div to Store Launch Info
+                    const forecastDiv = document.createElement(`div`)
+                    // set classes
+                    forecastDiv.classList = `forecast-div col s12 light-blue darken-4 white-text`
+                    
+                    // create a p element
+                    const errorMessage = document.createElement(`h5`)
+                    // set inner HTML
+                    errorMessage.innerHTML = `It looks like we're having troubles connecting to our API. Please refresh the page to try again!`
+                    // set class 
+                    errorMessage.classList = `mission-title center-text`
+                    // append to container 
+                    forecastDiv.appendChild(errorMessage)
+                    upcomingForecastContainer.appendChild(forecastDiv)
                 }
             })
             .then(function(currentForecastResponse) {
@@ -214,10 +262,26 @@ const getForecastInfo = function() {
             })
         }
         else if (nextLaunchResponse.launch_site.site_id === `ksc_lc_39a`) {
-            fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=28.6050&lon=-80.6026&appid=bb7e1bece1c4e598bb1f8819dfe626cd&units=imperial`)
+            fetch(`https://api.openweathermap.org/data/2.5/onecal?lat=28.6050&lon=-80.6026&appid=bb7e1bece1c4e598bb1f8819dfe626cd&units=imperial`)
             .then(function(currentForecastResponse) {
                 if (currentForecastResponse.ok) {
                     return currentForecastResponse.json();
+                }
+                else {
+                    // create a Div to Store Launch Info
+                    const forecastDiv = document.createElement(`div`)
+                    // set classes
+                    forecastDiv.classList = `forecast-div col s12 light-blue darken-4 white-text`
+                    
+                    // create a p element
+                    const errorMessage = document.createElement(`h5`)
+                    // set inner HTML
+                    errorMessage.innerHTML = `It looks like we're having troubles connecting to our API. Please refresh the page to try again!`
+                    // set class 
+                    errorMessage.classList = `mission-title center-text`
+                    // append to container 
+                    forecastDiv.appendChild(errorMessage)
+                    upcomingForecastContainer.appendChild(forecastDiv)
                 }
             })
             .then(function(currentForecastResponse) {
@@ -316,6 +380,22 @@ const getForecastInfo = function() {
             .then(function(currentForecastResponse) {
                 if (currentForecastResponse.ok) {
                     return currentForecastResponse.json();
+                }
+                else {
+                    // create a Div to Store Launch Info
+                    const forecastDiv = document.createElement(`div`)
+                    // set classes
+                    forecastDiv.classList = `forecast-div col s12 light-blue darken-4 white-text`
+                    
+                    // create a p element
+                    const errorMessage = document.createElement(`h5`)
+                    // set inner HTML
+                    errorMessage.innerHTML = `It looks like we're having troubles connecting to our API. Please refresh the page to try again!`
+                    // set class 
+                    errorMessage.classList = `mission-title center-text`
+                    // append to container 
+                    forecastDiv.appendChild(errorMessage)
+                    upcomingForecastContainer.appendChild(forecastDiv)
                 }
             })
             .then(function(currentForecastResponse) {

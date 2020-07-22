@@ -104,6 +104,9 @@ header {
   font-size: .75vw;
   color: #1f4068;
 }
+.center-text {
+  text-align: center;
+}
 /* Media Queries */
 @media screen and (max-width: 1230px) {
   header {
