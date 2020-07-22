@@ -3,6 +3,8 @@ var launchHistoryContainer = document.querySelector('.past-launches');
 
 function datePicker() {
     var searchYear = document.querySelector("#yearpicker").value;
+    var searchMonth = document.querySelector("#monthpicker").value;
+    
 
     fetch('https://api.spacexdata.com/v3/launches/past?launch_year=' + searchYear)
     .then(function(response) {
@@ -12,7 +14,13 @@ function datePicker() {
     .then(function(response) {
        
     
-        for (var i=0; i < 25; i++) {
+        response = response.filter(function(launch){
+            const launchDate = launch.launch_date_utc
+            var d = new Date(`${launchDate}`)
+            return d.getMonth() + 1 === parseInt(searchMonth);
+        })
+    
+        for (var i=0; i < response.length; i++) {
             var launchDiv = document.createElement('div')
             
             launchDiv.classList = 'launch-div col s12 red lighten-1 white-text z-depth-3'
