@@ -262,7 +262,7 @@ const getForecastInfo = function() {
             })
         }
         else if (nextLaunchResponse.launch_site.site_id === `ksc_lc_39a`) {
-            fetch(`https://api.openweathermap.org/data/2.5/onecal?lat=28.6050&lon=-80.6026&appid=bb7e1bece1c4e598bb1f8819dfe626cd&units=imperial`)
+            fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=28.6050&lon=-80.6026&appid=bb7e1bece1c4e598bb1f8819dfe626cd&units=imperial`)
             .then(function(currentForecastResponse) {
                 if (currentForecastResponse.ok) {
                     return currentForecastResponse.json();
