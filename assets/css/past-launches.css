@@ -12,16 +12,15 @@ header {
     flex-wrap: wrap;
     /* position: sticky; */
     top: 0;
-  }
-  .logo-image {
+}
+.logo-image {
     height: 175px;
     width: 175px;
-  }
+}
 
 .mission-patch {
     height: 200px;
     width: 200px;
-    /* align-content: center; */
 
 }
 
@@ -37,7 +36,6 @@ color: #1f4068;
 
 .past-launches {
   font-size: 3rem;
-  /* text-align: center; */
   color: yellow;
 }
 
@@ -45,3 +43,13 @@ color: #1f4068;
   border-radius: 10px;
 }
 
+.span-input {
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 768px){
+  .past-launches {
+    text-align: center;
+  }
+  
+}

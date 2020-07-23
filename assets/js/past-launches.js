@@ -14,7 +14,7 @@ function datePicker() {
     .then(function(response) {
        
        
-
+    // month drop down selector    
     response = response.filter(function(launch){
         const launchD = launch.launch_date_utc
         const d = new Date(`${launchD}`)
@@ -31,7 +31,7 @@ function datePicker() {
         
             launchDiv.classList = 'launch-div col s12 red lighten-1 white-text z-depth-3'
 
-            
+            // consts for api info
             const launchName = response[i].mission_name
             const flightNumber = response[i].flight_number
             const launchDate = response[i].launch_date_local
@@ -56,7 +56,7 @@ function datePicker() {
             }
             
 
-            
+            // mission general info
             const missionInfo = document.createElement('h5')
             missionInfo.innerHTML = "Mission Name : <span class='span-input'>" 
             + launchName + "</span><br /> SpaceX Flight Number: <span class='span-input'>" 
