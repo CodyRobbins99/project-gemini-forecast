@@ -2,27 +2,33 @@
 var launchHistoryContainer = document.querySelector('.past-launches');
 
 function datePicker() {
+    document.getElementById('past-launches').innerHTML='';
     var searchYear = document.querySelector("#yearpicker").value;
     var searchMonth = document.querySelector("#monthpicker").value;
 
     fetch('https://api.spacexdata.com/v3/launches/past?launch_year=' + searchYear)
     .then(function(response) {
         return response.json();
-    })
+    }
 
     .then(function(response) {
        
-    //  console.log(searchYear);
-    //  console.log(response);
 
     response = response.filter(function(launch){
-        const launchDate = launch.launch_date_utc
-        var d = new Date(`${launchDate}`)
+        const launchD = launch.launch_date_utc
+        var d = new Date(`${launchD}`)
         return d.getMonth() + 1 === parseInt(searchMonth);
+        
     })
-    
-        for (var i=0; i < response.length; i++) {
+    if (response.length === 0) {
+        document.getElementById('past-launches').innerHTML='Houston, we have a problem! There were no launches this month 😢';
+      }
+       
+        for (let i=0; i < response.length; i++) {
+            console.log(i);
+            
             var launchDiv = document.createElement('div')
+        
             
             launchDiv.classList = 'launch-div col s12 red lighten-1 white-text z-depth-3'
 
@@ -33,7 +39,7 @@ function datePicker() {
             var payloadType = response[i].rocket.second_stage.payloads[0].payload_type
             var launchDetails = response[i].details
             var missionPatch = response[i].links.mission_patch
-
+            
             var patchImg = document.createElement('img')
             patchImg.innerHTML = '';
             patchImg.classList = 'mission-patch section'
@@ -62,3 +68,4 @@ function datePicker() {
 // function pageReset() {
 //     document.getElementsByClassName("launch-div").reset();
 // }
+

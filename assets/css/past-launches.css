@@ -34,6 +34,16 @@ color: #1f4068;
  padding-bottom: 5px;
 }
 
-.launch-div {
-  border-radius: 30px;
+.btn {
+  justify-content: center;
 }
+
+.past-launches {
+  font-size: 3rem;
+  text-align: center;
+  color: yellow;
+}
+
+/* .launch-div {
+  border-radius: 30px;
+} */
