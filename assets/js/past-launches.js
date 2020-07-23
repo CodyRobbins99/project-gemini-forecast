@@ -13,6 +13,7 @@ function datePicker() {
 
     .then(function(response) {
        
+       
 
     response = response.filter(function(launch){
         const launchD = launch.launch_date_utc
@@ -38,11 +39,22 @@ function datePicker() {
             const launchDetails = response[i].details
             const missionPatch = response[i].links.mission_patch
             
-            const patchImg = document.createElement('img')
-            patchImg.innerHTML = '';
-            patchImg.classList = 'mission-patch section'
-            patchImg.setAttribute('src', missionPatch);
-            launchDiv.appendChild(patchImg);
+            // mission patch image if statement
+            if (missionPatch === null) {
+                const patchImg = document.createElement('img')
+                patchImg.innerHTML = ''
+                patchImg.classList = 'mission-patch section'
+                patchImg.setAttribute('src',"https://seekvectorlogo.com/wp-content/uploads/2017/12/spacex-vector-logo-small.png")
+                launchDiv.appendChild(patchImg)
+            }
+            else {
+                const patchImg = document.createElement('img')
+                patchImg.innerHTML = '';
+                patchImg.classList = 'mission-patch section'
+                patchImg.setAttribute('src', missionPatch);
+                launchDiv.appendChild(patchImg); 
+            }
+            
 
             
             const missionInfo = document.createElement('h5')
@@ -58,12 +70,10 @@ function datePicker() {
 
             launchHistoryContainer.appendChild(launchDiv)
         }
+        
       
     })
     
 }
 
-// function pageReset() {
-//     document.getElementsByClassName("launch-div").reset();
-// }
 
