@@ -4,48 +4,21 @@
 
 
 body {
-    background-image: url(./images/43895099105_0eaf6ef695_k.jpg);
+    background-image: url(../images/43895099105_0eaf6ef695_k.jpg);
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: normal;
     
 }
-section {
-    padding: 400px;
-}
 
-.landing-page {
-    display: flex;
-    justify-content: center;
-}
-
-
-/* .landing-page-buttons {
-    text-align: center;
-    background-color: #27496d76;
-    color: white;
-    padding: 20px;
-    border-radius: 15px;
-
-}
-
-.waves-red {
-    background-color: white;
-    color: black;
-} */
 
  @import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap'); 
 
-/* body, html {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  background: #5CA4EA;
-  overflow: hidden;
-  font-family: 'Lato', sans-serif;
-} */
+
 
 .container {
-  width: 400px;
-  height: 400px;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -55,6 +28,11 @@ section {
   align-items: center;
 }
 
+.logo {
+  position: relative;
+  top: -40px;
+}
+
 .center {
   width: 180px;
   height: 60px;
@@ -62,17 +40,21 @@ section {
 }
 
 .btn {
-  width: 180px;
+  width: 200px;
   height: 60px;
   cursor: pointer;
   background: transparent;
   border: 1px solid #91C9FF; 
   outline: none;
   transition: 1s ease-in-out;
+  margin: 5px 10px;
+  position: relative;
+  
 }
 
 svg {
   position: absolute;
+  width: 100%;
   left: 0;
   top: 0;
   fill: none;
@@ -97,3 +79,39 @@ svg {
   font-weight: 100;
 }
 
+.btn .future-launch {
+  font-size: 12.5px;
+}
+
+.modal {
+  background-color: #01579b;
+  color: white;
+}
+
+.modal h3 {
+  display: inline;
+}
+
+.modal .planet-img {
+  float: left;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.modal .starman-img {
+  border: 2px solid white;
+}
+
+.modal-close {
+  font-weight: bold;
+}
+
+.distance {
+  margin: 10px 0;
+}
+
+@media only screen and (max-width: 400px) {
+  .btn {
+    background-color: #f44336;
+  }
+}
