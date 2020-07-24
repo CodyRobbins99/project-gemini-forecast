@@ -28,6 +28,11 @@ body {
   align-items: center;
 }
 
+.logo {
+  position: relative;
+  top: -40px;
+}
+
 .center {
   width: 180px;
   height: 60px;
@@ -79,16 +84,26 @@ svg {
 }
 
 .modal {
-  background-color: #001845;
+  background-color: #01579b;
   color: white;
 }
 
-.modal img {
+.modal h3 {
+  display: inline;
+}
+
+.modal .planet-img {
+  float: left;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.modal .starman-img {
   border: 2px solid white;
 }
 
-.modal-footer {
-  color: white;
+.modal-close {
+  font-weight: bold;
 }
 
 .distance {
