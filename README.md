@@ -1,4 +1,4 @@
-![IMG_5597](https://user-images.githubusercontent.com/66441119/87803600-b6d2d300-c820-11ea-8072-fa570faf0d88.JPG) 
+![IMG_5597](https://github.com/CodyRobbins99/project-gemini-forecast/blob/develop/assets/images/logo.png) 
 # _SPACE X_ Launch Forecasting App 
 
 ## Purpose: 
