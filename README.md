@@ -1,14 +1,16 @@
 ![IMG_5597](https://github.com/CodyRobbins99/project-gemini-forecast/blob/develop/assets/images/logo.png) 
 # _SPACE X_ Launch Forecasting App 
 
-## Purpose: 
+## Description 
  Project Gemini is an app that allows users to search for upcoming Space-X launches and check the weather forecast for said launches with in a 7 day window of launch day.
-### It can also: 
-* Let users search for information of past launches i.e, launch date, serial number of rocket, how many times the booster was used, images of the launch etc. 
-* Let users track the location of _StarMan_ and answer the age old question, where is the roadster? &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  ☀️
+### Pages 
+* Past Launches - Users can search using month and year for any past SpaceX launches. The search will return the mission patch, mission name, flight number, launch date, payload type and launch details. 
+* Future Launch Forecast - Users can see mision information on the 5 closest launches. The page will display the mission name, flight number, launch date, launch location, rocket serial number, rocket flight numbers (how many times it has been flown), and mission description. At the bottom of the page the user can see the weather forecast for the location of the next launch, allowing them to know how the weather conditions will be for viewing.  
+* Track Starman - Users can see the location of the pioneer Starman as he flies across our solar system in his red Tesla Roadster. It will give users Starman's distance from Earth and well as Mars.  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  ☀️
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 🚘        
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 🌎 
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 🌔 
+
 # ScreenShots
 ![Modal Demo](https://github.com/CodyRobbins99/project-gemini-forecast/blob/develop/assets/images/modal-demo.gif)
 ![Future Launch Demo](https://github.com/CodyRobbins99/project-gemini-forecast/blob/develop/assets/images/future-demo.gif)
@@ -20,10 +22,13 @@
  * **_Materialize_**
  * **_Google Fonts_**
  
- 
+ ## APIs Used
+ * SpaceX - https://docs.spacexdata.com/?version=latest
+ * Open Weather - https://openweathermap.org/api
+  
  # Team Gemini  
- Team Leader/ Future Launches page: Cody <br />
- Past Launches Page: Javier <br />
- Splash Page / Starman Modal: Shaun <br />
- ReadMe: Connor
+ Team Leader/ Future Launches page: Cody - https://github.com/CodyRobbins99 <br />
+ Past Launches Page: Javier - https://github.com/ortizjavier10 <br />
+ Splash Page / Starman Modal: Shaun - https://github.com/smardones <br />
+ ReadMe: Connor - https://github.com/CDL14
  
