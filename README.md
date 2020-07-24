@@ -22,5 +22,8 @@
  
  
  # Team Gemini  
- Cody, Javier, Shaun, Connor
+ Team Leader/ Future Launches page: Cody
+ Past Launches Page: Javier
+ Splash Page / Starman Modal: Shaun
+ ReadMe: Connor
  
