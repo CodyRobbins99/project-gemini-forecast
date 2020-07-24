@@ -1,4 +1,4 @@
-![IMG_5597](https://github.com/CodyRobbins99/project-gemini-forecast/blob/develop/assets/images/logo.png) 
+![Logo Image](https://github.com/CodyRobbins99/project-gemini-forecast/blob/develop/assets/images/logo.png) 
 # _SPACE X_ Launch Forecasting App 
 
 ## Website 
@@ -18,6 +18,7 @@ https://codyrobbins99.github.io/project-gemini-forecast/index.html
 ![Modal Demo](https://github.com/CodyRobbins99/project-gemini-forecast/blob/develop/assets/images/modal-demo.gif)
 ![Future Launch Demo](https://github.com/CodyRobbins99/project-gemini-forecast/blob/develop/assets/images/future-demo.gif)
 ![Past Launch Demo](https://github.com/CodyRobbins99/project-gemini-forecast/blob/develop/assets/images/past-demo.gif)
+
 ## Fueled By:  
  * **_HTML_** 
  * **_CSS_** 
@@ -34,4 +35,3 @@ https://codyrobbins99.github.io/project-gemini-forecast/index.html
  Past Launches Page: Javier - https://github.com/ortizjavier10 <br />
  Splash Page / Starman Modal: Shaun - https://github.com/smardones <br />
  ReadMe: Connor - https://github.com/CDL14
- 
